@@ -1,0 +1,148 @@
+body{
+    background-image: url(ahttps://scontent.fhan2-5.fna.fbcdn.net/v/t1.15752-9/798586816_1087998520407118_1052853508484721264_n.jpg?stp=dst-jpg_tt6&cstp=mx1536x2048&ctp=s640x640&_nc_cat=107&ccb=1-7&_nc_sid=0024fc&_nc_eui2=AeHRzCHqIjv2E_HnslEz6vweaKEjFEItU_5ooSMUQi1T_riJxdifx9WDvcWMJHZ653bW6S3eOQaq-syVN7LrJgZc&_nc_ohc=DKL8YWO-pfMQ7kNvwE3HMVO&_nc_oc=Adp6oOxc5A99bzM0eR-xNnMPbdt7ecnrPSlG3eFYyDEnpObtrnYYxT2dKADCqqi-Fr2uWkt__ZH3hTcWCRBZF1T7&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent.fhan2-5.fna&_nc_ss=7a22e&oh=03_Q7cD6QFU1E-tiBbQstBNlxtGRj09kP5fzDjJJNYE4UehGsqorw&oe=6AC79C5B);
+}
+
+h1.test1{
+    /* màu chữ cái */
+    color: black;
+
+    /*kiểu chữ*/
+    font-style: italic;
+
+    /*font chữ*/
+    font-family:Arial, Helvetica, sans-serif;
+
+    /*chuyển hoa*/
+    text-transform: capitalize;
+
+    /*căn giữa*/
+    text-align: center;
+
+    /*cỡ chữ*/
+    font-size: 20px;
+    
+    /*độ mờ*/
+    opacity: 30%;
+}
+
+h2.test1{
+    opacity: 40%;
+    background-color: red;
+}
+
+h3.test1{
+    opacity: 50%;
+    /*display: none nó ẩn đi và ẩn cả giao diện*/
+    display: none;
+}
+
+h4.test1{
+    /* visibility: hidden: ẩn: visible: hiện */
+    visibility: hidden;
+    opacity: 60%;
+}
+
+h5.test1{
+    opacity: 70%;
+}
+
+img{
+    transition: 1.5s;
+}
+
+.my1:checked ~ img{
+    /* biến mất khỏi giao diện */
+    /* display: none; */
+    /* biến khỏi giao diện nhưng vẫn chiếm vị trí */
+    /* visibility: hidden; */
+    /* chỉ mờ đi và tương tác được */
+    opacity: 0%;
+}
+
+h1,h2,
+.demo.demo2,
+#id{
+    color:red;
+}
+
+/* con trức tiếp*/
+/* div p{
+    color:blue;
+} */
+
+div p{
+    color: pink;
+}
+
+/* liền kề */
+h3+h4{
+    color: green;
+}
+
+h2+.demo{
+    font-style: italic;
+}
+
+div ~ h4{
+    font-size: 50px;
+}
+
+/* [href]{
+    color: violet;
+} */
+
+[target ="_blank"]{
+    color: pink;
+}
+
+/* [target ="_self"]{
+    color: dark;
+} */
+
+/* đổi màu khi di chuột */
+.p0:hover{
+    color: blue;
+    font-size: 30px;
+}
+
+/* đỏi màu khi giữ chuột */
+.p1:active{
+    color: green;
+    font-size: 10px;
+}
+
+
+/* khi click nó sẽ đổi màu link và sẽ ko còn giữ màu nữa */
+.click_me:link{
+    color:green;
+}
+/* khi truy cập rồi nó sẽ để thành màu này */
+.click_me:visited{
+    color: red;
+}
+
+/* không có nội dung thì nó sẽ hiện này */
+.div_elm:empty{
+    width: 50px;
+    height: 50px;
+    background-color: violet;
+}
+
+/* có nội dung thì nó sẽ hiện này */
+.div_elm{
+    width: 50px;
+    height: 50px;
+    background-color: red;
+}
+
+/* target là kiểu cái id nó được gắn vào */
+h2:target{
+    color: aqua;
+}
+
+.p5{
+    max-width: 600px;
+    max-height: 600px;
+    border: 100px red;
+    margin: 25px;
+}

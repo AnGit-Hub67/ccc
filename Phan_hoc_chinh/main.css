@@ -1,0 +1,33 @@
+/* Inline:1000, #id=100, .class=10, tag=1 */
+/* Universal selector: * =0 và inhetited selector: inherit =0 */
+/* !important = quan trong nhất */
+/*Css selector*/
+h1{
+    color: red;
+    font-size: 50px;
+}
+
+#list1 ul{
+    color: blueviolet;
+}
+
+.list2 ul{
+    color: green;
+}
+
+/* Css variable: biến css */
+/* Cái này giúp gắn vào nhiều thành phần mà mình muốn, khi muốn thay đổi chỉ cần thay đổi ở 1 chỗ */
+:root{
+    /*global*/
+    --text-color: red;
+}
+
+h3{
+    color: var(--text-color);
+}
+
+h4{
+    /* local */
+    --my-color: blue;
+    color: var(--my-color);
+}

@@ -1,0 +1,23 @@
+*{
+    background-color: lightgrey;
+    
+}
+
+body{
+    background: linear-gradient(to right, red, blue);
+}
+
+p{
+    background-color: white ;
+    box-sizing: border-box;
+    color: red;
+    text-align: center;
+    flex-direction: row;
+}
+
+.container{
+    background-color: red;
+    border-radius: 30px;
+    max-width: 100%;
+    min-height: 300px;
+}
